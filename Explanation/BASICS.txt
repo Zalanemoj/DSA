@@ -1,0 +1,27 @@
+# What is time Complexity?
+## Rate of increase in time with respect to input size.
+-- Always calculate time complexity in terms of worst case.
+-- Avoid the constant values.
+-- Avoid lower bound.
+
+# What is space complexity?
+## The amount of space it in combined that is auxiliary space plus input space in order to run the program.
+
+# Time limit exceeded error[TLE]?
+## When amount of time uh for the operation becomes greater than 10 to the power 8 this error is shown because your time complexity exceeded the servers time limit.
+
+Operation                      Time (avg)   Space
+list.append(x)                 O(1)         O(1)
+list.pop()                     O(1)         O(1)
+list.pop(0)                    O(n)         O(1)
+list.insert(0, x)              O(n)         O(1)
+list.insert(i, x) (any index)  O(n)         O(1)
+x in list                      O(n)         O(1)
+list[i] (index access)         O(1)         O(1)
+list[i:j] (slicing)            O(j-i)       O(j-i)
+list.extend(iterable)          O(k)         O(k)   [k = len(iterable)]
+list + list                    O(n + m)     O(n + m)
+len(list)                      O(1)         O(1)
+min(list) / max(list)          O(n)         O(1)
+list.sort()                    O(n log n)   O(1)   (in‑place)
+sorted(list)                   O(n log n)   O(n)   (new list)
