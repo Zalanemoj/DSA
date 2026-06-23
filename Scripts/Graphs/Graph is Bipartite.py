@@ -11,7 +11,7 @@ class Solution:
 
     def solve(self, graph: List[List[int]],visited:List[int],current_node:int,colour:int) -> bool:
         """This function deals solving the problem of bipartite graph"""
-        # Making changes in the current node and making it equal to colour
+        # Making changes in the current node and making it equal to color
         visited[current_node] = colour
 
         # Iterating through each and every neighbor of the graph
